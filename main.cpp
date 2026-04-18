@@ -8,7 +8,7 @@ int main()
     SetConsoleOutputCP(1251);
 
     int size;
-    std::cout << "Ââåäèòå ðàçìåð ìàññèâà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
     std::cin >> size;
 
     int* arr = new int[size];
@@ -20,7 +20,7 @@ int main()
 
     std::ofstream file("out.txt");
     if (!file.is_open()) {
-        std::cout << "Íå óäàëîñü ñîçäàòü ôàéë!" << std::endl;
+        std::cout << "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»!" << std::endl;
         delete[] arr;
         return 1;
     }
@@ -34,8 +34,6 @@ int main()
 
     file.close();
     delete[] arr;
-
-    std::cout << "Ìàññèâ çàïèñàí â ôàéë out.txt" << std::endl;
 
     return 0;
 }
